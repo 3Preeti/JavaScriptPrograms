@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angular JS Expression with Conditional Statements</title>
+</head>
+<body>
+    <div ng-controlle = "myController">
+        <p ng-if="age" >= 18">You are eligible to vote.</p>
+        <p ng-if = "age < 18"> You are not a eligible to vote.</p>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script>
+        angular.module("myApp",[]).controller("myController",function($scope){
+         $scope.age=25;
+});
+    </script>
+</body>
+</html>
